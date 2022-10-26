@@ -59,6 +59,9 @@ class F_Level3 implements ActionListener {
                 200,
                 50
         );
+         label.setFont(new Font("Now Bold",Font.PLAIN,50));
+        label.setBounds(100,size.height-180,250,65);
+        
         button.setText("Main Menu");
         button.setBounds(
                 100,
@@ -94,6 +97,7 @@ class F_Level3 implements ActionListener {
         music.setFile("music.wav");
         music.play();
         music.loop();
+        frame.add(label);
         frame.add(button2);
         frame.add(button);
         frame.add(timeLabel);
